@@ -20,7 +20,7 @@ ECJ is a Java bytecode compiler extracted from the Eclipse IDE.
 %configure \
 	--disable-static
 
-%{__make}
+%{__make} -r
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -29,7 +29,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
-#rm -rf $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
 
 %post
 %ldconfig_post
