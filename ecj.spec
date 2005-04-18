@@ -1,7 +1,7 @@
 Summary:	Eclipse Compiler for Java
 Name:		ecj
 Version:	0.298
-Release:	0.1
+Release:	1
 License:	CPL v1.0
 Group:		Development/Languages/Java
 Source0:	ftp://sources.redhat.com/pub/rhug/ecj/rhug-%{name}-%{version}.tar.gz
@@ -20,7 +20,7 @@ ECJ is a Java bytecode compiler extracted from the Eclipse IDE.
 %configure \
 	--disable-static
 
-%{__make} -r
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
