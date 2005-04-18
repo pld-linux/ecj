@@ -1,4 +1,5 @@
 Summary:	Eclipse Compiler for Java
+Summary(pl):	Kompilator Eclipse dla Javy
 Name:		ecj
 Version:	0.298
 Release:	1
@@ -12,6 +13,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 ECJ is a Java bytecode compiler extracted from the Eclipse IDE.
+
+%description -l pl
+ECJ to kompilator bajtkodu Javy wyodrêbiony ze ¶rodowiska
+programistycznego (IDE) Eclipse.
 
 %prep
 %setup -q -n rhug-ecj-%{version}
@@ -31,11 +36,8 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post
-%ldconfig_post
-
-%postun
-%ldconfig_postun
+%post	-p /sbin/ldconfig
+%postun	-p /sbin/ldconfig
 
 %files
 %defattr(644,root,root,755)
