@@ -2,7 +2,7 @@ Summary:	Eclipse Compiler for Java
 Summary(pl):	Kompilator Eclipse dla Javy
 Name:		ecj
 Version:	0.298
-Release:	1
+Release:	2
 License:	CPL v1.0
 Group:		Development/Languages/Java
 Source0:	ftp://sources.redhat.com/pub/rhug/ecj/rhug-%{name}-%{version}.tar.gz
