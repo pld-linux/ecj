@@ -8,6 +8,7 @@ Group:		Development/Languages/Java
 Source0:	ftp://sources.redhat.com/pub/rhug/ecj/rhug-%{name}-%{version}.tar.gz
 # Source0-md5:	8e617bf2845a45b04c451694751d7408
 URL:		http://www.eclipse.org/
+BuildRequires:	automake
 BuildRequires:	gcc-java
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
