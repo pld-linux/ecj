@@ -22,6 +22,8 @@ programistycznego (IDE) Eclipse.
 %setup -q -n rhug-ecj-%{version}
 
 %build
+cp -f /usr/share/automake/config.sub .
+
 %configure \
 	--disable-static
 
