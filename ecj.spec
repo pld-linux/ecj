@@ -1,5 +1,5 @@
 Summary:	Eclipse Compiler for Java
-Summary(pl.UTF-8):   Kompilator Eclipse dla Javy
+Summary(pl.UTF-8):	Kompilator Eclipse dla Javy
 Name:		ecj
 Version:	0.298
 Release:	2
